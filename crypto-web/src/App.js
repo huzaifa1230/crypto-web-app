@@ -1,9 +1,19 @@
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar";
+
+import LandingPage from "./Pages/LandingPage";
+import BlogsPage from "./Pages/BlogsPage";
 
 function App() {
   return (
-    <div className="bg-blue-600">
-      <h1 className="text-purple-700">hello from crypto</h1>
+    <div className="">
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/blogs" element={<BlogsPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
