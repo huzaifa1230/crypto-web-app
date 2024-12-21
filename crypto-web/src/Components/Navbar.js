@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 function Navbar() {
   return (
-    <div className="bg-black text-purple-900 ">
+    <div className="bg-primary text-secondary ">
       <Link to="/" className="cursor-pointer">
         Home
       </Link>
